@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#dbb700">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="103dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:background="@drawable/co"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Coins"
+            android:textSize="22dp"
+            android:text="0"
+            android:layout_alignBottom="@+id/Health"
+            android:layout_toEndOf="@+id/imageView4"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/heals"
+            android:id="@+id/imageView5"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Health"
+            android:textSize="22dp"
+            android:text="3"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imageView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#4f3030"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"></FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:background="@drawable/x"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="61dp"
+            android:layout_height="183dp"
+            android:layout_alignEnd="@+id/levo"></FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/levo"
+            android:textSize="30dp"
+            android:layout_alignTop="@+id/Znak"
+            android:layout_toStartOf="@+id/Znak"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Znak"
+            android:textSize="30dp"
+            android:text="  =  "
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pravo"
+            android:textSize="30dp"
+            android:layout_alignTop="@+id/Znak"
+            android:layout_toEndOf="@+id/Znak"
+            android:background="#ffffff" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:textSize="40sp"
+        android:textColor="#9f0707"
+        android:inputType="numberSigned"
+        android:layout_alignParentBottom="true" />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ok"
+        android:id="@+id/button6"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
